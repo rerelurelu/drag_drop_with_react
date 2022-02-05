@@ -3,11 +3,11 @@ import './App.css';
 
 function App() {
   return (
-    <div>
+    <div className="dragDropArea">
       <DragDropContext>
         <Droppable droppableId="droppable">
           {(provided) => (
-            <div {...provided.droppableProps} ref={provided.innerRef}>
+            <div className="item" {...provided.droppableProps} ref={provided.innerRef}>
               <Draggable draggableId="item0" index={0}>
                 {(provided) => (
                   <div
